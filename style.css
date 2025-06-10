@@ -7,7 +7,7 @@ header {
   background-color: #5a71bb;
   text-align: center;
   color: white;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 body {
@@ -118,5 +118,13 @@ h2.preco_produto span {
     margin-top: 10px;
     width: 50%;
     margin: 0 auto;
+  }
+
+  h2.preco_produto span {
+    font-size: 16px;
+  }
+
+  .lista-produto-single h2 {
+    font-size: 18px;
   }
 }
