@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/logo-titulo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Lista de Supermercado</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Lista de Supermercado</h1>
+    </header>
+
+    <div class="lista-cadastro">
+      <input type="text" placeholder="Nome do Produto" name="nome_produto" />
+      <input
+        type="number"
+        name="preco_produto"
+        placeholder="R$ 0,00"
+        step="0.01"
+        title="Preço em Reais até 2 casas decimais"
+      />
+      <input type="submit" value="Cadastrar" name="acao" />
+    </div>
+
+    <div class="lista-produtos"></div>
+
+    <div class="soma-produto">
+      <h3>Total: <span>R$ 0,00</span></h3>
+    </div>
+
+    <button type="button" class="limpar-lista">Limpar</button>
+
+    <script src="supermercado.js"></script>
+  </body>
+</html>

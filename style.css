@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #5a71bb;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+}
+
+body {
+ background-color: #90ffc0;
+}
+.lista-cadastro {
+  display: flex;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.lista-cadastro input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  color: #5a71bb;
+  padding-left: 20px;
+  border: 1px solid #5a71bb;
+  border-color: #5a71bb;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.lista-cadastro input[type="number"] {
+  flex: 1;
+  padding: 10px;
+  color: #5a71bb;
+  padding-left: 20px;
+  border: 1px solid #5a71bb;
+  border-color: #5a71bb;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.lista-cadastro input[type="text"]::placeholder {
+  color: #5a71bb;
+}
+.lista-cadastro input[type="number"]::placeholder {
+  color: #5a71bb;
+}
+
+.lista-cadastro input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #5a71bb;
+  color: white;
+  border-color: #5a71bb;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.lista-produto-single {
+  display: flex;
+  padding: 10px 0;
+  margin: 15px 0;
+  border-bottom: 1px solid #5a71bb;
+}
+
+.lista-produto-single h2 {
+  flex: 1;
+  color: #2442a6;
+  padding: 0 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+h2.preco_produto span {
+  background-color: #5a71bb;
+  color: white;
+  font-size: 20px;
+  padding: 8px 10px;
+  border-radius: 20px;
+}
+
+.soma-produto {
+  display: flex;
+  font-weight: bold;
+  color: #051b62;
+  font-size: 30px;
+  margin: 0 20px;
+  border-bottom: 10px solid #5a71bb;
+  justify-content: space-between;
+}
+
+.limpar-lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px 20px;
+  background-color: #5a71bb;
+  color: white;
+  border-color: #5a71bb;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+  .lista-cadastro {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .lista-cadastro input[type="submit"] {
+    margin-top: 10px;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
